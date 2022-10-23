@@ -1,0 +1,23 @@
+.battery{
+    width: 300px;
+    height: 100px;
+    border: solid 3px black;
+}
+
+.level{
+    height: 100%;
+    background: red;
+    animation: charge 2s linear infinite;
+}
+
+@keyframes charge{
+    0%{
+        width: 0;
+        background: red;
+    }
+
+    100%{
+        width: 100%;
+        background: green;
+    }
+}
